@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "realmvoice",
+  "version": "${version}",
+  "name": "RealmVoice",
+  "description": "Client-only UDP proximity voice chat for Minecraft 26.3 Realms.",
+  "authors": ["RealmVoice"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.halil.realmvoice.RealmVoiceClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

@@ -1,0 +1,15 @@
+[Unit]
+Description=RealmVoice UDP Voice Server
+After=network.target
+
+[Service]
+Type=simple
+User=opc
+WorkingDirectory=/home/opc/realmvoice
+EnvironmentFile=/home/opc/realmvoice/.env
+ExecStart=/usr/bin/node /home/opc/realmvoice/server.js
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
